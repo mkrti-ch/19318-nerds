@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="http://via.placeholder.com/160x65" width="160" height="65" alt="Логоти Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li class="site-navigation-item"><a href="index.html">студия</a></li>
+        <li class="site-navigation-item"><a href="#">клиенты</a></li>
+        <li class="site-navigation-item site-navigation-current"><a href="shop.html">магазин</a></li>
+        <li class="site-navigation-item"><a href="#">контакты</a></li>
+      </ul>
+      <ul class="user-cart">
+        <li class="cart-link">корзина</li>
+      </ul>
+    </nav>
+    <h1>Магазин готовых шаблонов</h1>
+  </header>
+  <main class="container">
+    <section class="catalog">
+      <aside class="catalog-left">
+        <form action="#" method="post">
+          <h3>Стоимость:</h3>
+          <input type="range" min="0" max="100" step="1" value="50">
+          <br>
+          <label for="from">от</label>
+          <input class="min-price" type="text" value="0" id="from">
+          <label for="to">до</label>
+          <input class="max-price" type="text" value="15 000" id="to">
+          <h3>Сетка:</h3>
+          <input type="radio" name="grid" id="adaptive" value="adaptive">
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" name="grid" id="fixed" value="fixed">
+          <label for="fixed">Фиксированная</label>
+          <input type="radio" name="grid" id="reflow" value="reflow">
+          <label for="reflow">Резиновая</label>
+          <h3>Особенности:</h3>
+          <input type="checkbox" name="features" id="slider" value="slider" checked>
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" name="features" id="advantages" value="advantages">
+          <label for="advantages">Блок преимуществ</label>
+          <input type="checkbox" name="features" id="news" value="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" name="features" id="gallery" value="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" name="features" id="trash" value="trash">
+          <label for="trash">Корзина</label>
+          <button type="submit">Показать</button>
+        </form>
+      </aside>
+      <section class="catalog-right">
+        <div class="catalog-sort">
+          <span>Сортировать:</span>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+        </div>
+        <div class="catalog-arrows">
+          <a href="#" class="catalog-arrow-down">down</a>
+          <a href="#" class="catalog-arrow-up">up</a>
+        </div>
+        <div class="catalog-items">
+          <a href="#" class="catalog-item">
+            <figure class="catalog-image">
+              <img src="http://via.placeholder.com/360x576" width="360" height="576" alt="">
+            </figure>
+            <div class="catalog-item-main">
+              <h3>SEDONA</h3>
+              <p>Информационный сайт для туристов</p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </a>
+          <a href="#" class="catalog-item">
+            <figure class="catalog-image">
+              <img src="http://via.placeholder.com/360x576" width="360" height="576" alt="">
+            </figure>
+            <div class="catalog-item-main">
+              <h3>PINK APP</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </a>
+          <a href="#" class="catalog-item">
+            <figure class="catalog-image">
+              <img src="http://via.placeholder.com/360x576" width="360" height="576" alt="">
+            </figure>
+            <div class="catalog-item-main">
+              <h3>BARBERSHOP</h3>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </a>
+          <a href="#" class="catalog-item">
+            <figure class="catalog-image">
+              <img src="http://via.placeholder.com/360x576" width="360" height="576" alt="">
+            </figure>
+            <div class="catalog-item-main">
+              <h3>MISHKA</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </a>
+          <a href="#" class="catalog-item">
+            <figure class="catalog-image">
+              <img src="http://via.placeholder.com/360x576" width="360" height="576" alt="">
+            </figure>
+            <div class="catalog-item-main">
+              <h3>A PLUS</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </a>
+          <a href="#" class="catalog-item">
+            <figure class="catalog-image">
+              <img src="http://via.placeholder.com/360x576" width="360" height="576" alt="">
+            </figure>
+            <div class="catalog-item-main">
+              <h3>КВАСТ</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#">9 900 РУБ.</a>
+            </div>
+          </a>
+        </div>
+      </section>
+      <div class="catalog-paginator">
+        <span class="paginator-active">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" class="paginator-next">Следующая</a>
+      </div>
+  </main>
+  <section class="map">
+    <h2 class="visually-hidden">Карта</h2>
+    <img src="http://via.placeholder.com/1440x416" width="1440" height="416" alt="stats-pic">
+    <!-- Но мне кажется, что карту, если делать статику, то через background-image надо -->
+    <div class="map-write-us">
+      <h2>NЁRDS DESIGN STUDIO</h2>
+      <p> 191186, Санкт-Петербург,
+        <br> ул. Б. Конюшенная, д. 19/8
+        <br>
+        <br> тел. +7 (812) 275-75-75
+      </p>
+      <a href="#modal-write-us">Напишите нам</a>
+    </div>
+  </section>
+  </section>
+  </main>
+  <footer>
+    <ul class="social">
+      <li class="social-btn social-btn-vk">VK</li>
+      <li class="social-btn social-btn-fb">FB</li>
+      <li class="social-btn social-btn-in">IN</li>
+    </ul>
+    <b>Давайте дружить, это выгодно!</b>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
+    <form action="#" method="post">
+      <label for="name">Ваше имя:</label>
+      <br>
+      <input type="text" name="name" id="name">
+      <br>
+      <label for="email">Ваш e-mail:</label>
+      <br>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="text">Текст письма:</label>
+      <br>
+      <textarea name="text" cols="30" rows="10" id="text"></textarea>
+      <br>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+</body>

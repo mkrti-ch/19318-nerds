@@ -16,10 +16,10 @@
   			<img src="http://via.placeholder.com/160x65" width="160" height="65" alt="Логоти Нёрдс">
   		</a>
       <ul class="site-navigation">
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="shop.html">магазин</a></li>
-        <li><a href="#">контакты</a></li>
+        <li class="site-navigation-item"><a href="#">студия</a></li>
+        <li class="site-navigation-item"><a href="#">клиенты</a></li>
+        <li class="site-navigation-item"><a href="shop.html">магазин</a></li>
+        <li class="site-navigation-item"><a href="#">контакты</a></li>
       </ul>
       <ul class="user-cart">
         <li class="cart-link">корзина</li>
@@ -90,22 +90,64 @@
         <p><img src="http://via.placeholder.com/360x208" width="360" height="208" alt="stats-pic"></p>
         <span class="stats-header">с 2004 года Любим точность во всем:</span>
         <ul class="stats-list">
-        	<li class="stats-item"><span class="percent">146%</span></li>
-        	<li class="stats-item"><span class="percent">100%</span></li>
-        	<li class="stats-item"><span class="percent">50%</span></li>
+          <li class="stats-item">146<span class="percent">%</span></li>
+          <li class="stats-item">100<span class="percent">%</span></li>
+          <li class="stats-item">50<span class="percent">%</span></li>
         </ul>
       </div>
     </section>
     <section class="logos">
-    	<h2 class="visually-hidden">Логотипы макетов</h2>
-    	<ul class="logos-list">
-    			<li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="html-academy"></li>
-    			<li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="barbershop"></li>
-    			<li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="pink"></li>
-    			<li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="mishka"></li>
-    	</ul>
+      <h2 class="visually-hidden">Логотипы макетов</h2>
+      <ul class="logos-list">
+        <li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="html-academy"></li>
+        <li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="barbershop"></li>
+        <li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="pink"></li>
+        <li class="logos-item"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="mishka"></li>
+      </ul>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="http://via.placeholder.com/1440x416" width="1440" height="416" alt="stats-pic">
+      <!-- Но мне кажется, что карту, если делать статику, то через background-image надо -->
+      <div class="map-write-us">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p> 191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8
+          <br>
+          <br> тел. +7 (812) 275-75-75
+        </p>
+        <a href="#modal-write-us">Напишите нам</a>
+      </div>
     </section>
   </main>
+  <footer>
+    <ul class="social">
+      <li class="social-btn social-btn-vk">VK</li>
+      <li class="social-btn social-btn-fb">FB</li>
+      <li class="social-btn social-btn-in">IN</li>
+    </ul>
+    <b>Давайте дружить, это выгодно!</b>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
+    <form action="#" method="post">
+      <label for="name">Ваше имя:</label>
+      <br>
+      <input type="text" name="name" id="name">
+      <br>
+      <label for="email">Ваш e-mail:</label>
+      <br>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="text">Текст письма:</label>
+      <br>
+      <textarea name="text" cols="30" rows="10" id="text"></textarea>
+      <br>
+      <button type="submit">Отправить</button>
+
+    </form>
+  </section>
 </body>
 
 </html>
