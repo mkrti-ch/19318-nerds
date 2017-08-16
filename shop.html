@@ -18,7 +18,7 @@
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="index.html">Студия</a></li>
         <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-        <li class="site-navigation-item">Магазин</li>
+        <li class="site-navigation-item navigation-item-current"><a>Магазин</a></li>
         <li class="site-navigation-item"><a href="#">контакты</a></li>
       </ul>
       <a href="#">Корзина</a>
@@ -33,12 +33,12 @@
           <div class="cost">
             <h3>Стоимость:</h3>
             <input type="range" min="0" max="100" step="1" value="50" class="input-range">
-            <label for="from">от</label class="label-text">
-            <input class="min-price" type="text" value="0" id="from" class="input-text">
-            <label for="to">до</label class="label-text">
-            <input class="max-price" type="text" value="15 000" id="to" class="input-text">
+            <label class="label-text" for="from">от</label>
+            <input class="input-text" type="text" value="0" id="from">
+            <label class="label-text" for="to">до</label>
+            <input class="input-text" type="text" value="15 000" id="to">
           </div>
-          <div class="grid">
+          <div class="form-group">
             <h3>Сетка:</h3>
             <input type="radio" name="grid" id="adaptive" value="adaptive" class="input-radio">
             <label for="adaptive" class="label-radio">Адаптивная</label>
@@ -46,8 +46,6 @@
             <label for="fixed" class="label-radio">Фиксированная</label>
             <input type="radio" name="grid" id="reflow" value="reflow" class="input-radio">
             <label for="reflow" class="label-radio">Резиновая</label>
-          </div>
-          <div class="features">
             <h3>Особенности:</h3>
             <input type="checkbox" name="slider" id="slider" class="input-checkbox" checked>
             <label for="slider" class="label-checkbox">Слайдер</label>
@@ -136,12 +134,12 @@
             </div>
           </a>
         </div>
-        <div class="catalog-paginator">
-          <span class="paginator-active">1</span>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#" class="paginator-next">Следующая</a>
-        </div>
+        <ul class="catalog-paginator">
+          <li class="paginator paginator-active"><a>1</a></li>
+          <li class="paginator"><a href="#">2</a></li>
+          <li class="paginator"><a href="#">3</a></li>
+          <li class="paginator paginator-next"><a href="#">Следующая</a></li>
+        </ul>
       </section>
     </section>
     <section class="map">
@@ -161,7 +159,7 @@
       <li class="social-btn social-btn-fb"><a href="#">FB</a></li>
       <li class="social-btn social-btn-in"><a href="#">IN</a></li>
     </ul>
-    <span class="friendship">Давайте дружить, это выгодно!</span>
+    <span class="footer-promo">Давайте дружить, это выгодно!</span>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section class="modal modal-write-us">

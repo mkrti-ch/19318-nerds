@@ -16,7 +16,7 @@
         <img src="http://via.placeholder.com/160x65" width="160" height="65" alt="Логотип Нёрдс">
       </a>
       <ul class="site-navigation">
-        <li class="site-navigation-item">Студия</li>
+        <li class="site-navigation-item navigation-item-current"><a>Студия</a></li>
         <li class="site-navigation-item"><a href="#">Клиенты</a></li>
         <li class="site-navigation-item"><a href="shop.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
@@ -32,27 +32,27 @@
         <div class="slide-text">
           <h3>Долго, дорого, скрупулезно.</h3>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="btn btn-red"></a>
+          <a href="#" class="btn btn-red">Узнать больше</a>
         </div>
       </div>
       <div class="slide imac-img">
         <div class="slide-text">
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#" class="btn btn-red"></a>
+          <a href="#" class="btn btn-red">Узнать больше</a>
         </div>
       </div>
       <div class="slide ipad-img">
         <div class="slide-text">
           <h3>Только ночь, только хардкор</h3>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="btn btn-red"></a>
+          <a href="#" class="btn btn-red">Узнать больше</a>
         </div>
       </div>
       <div class="slider-dots">
-        <span class="design">•</span>
-        <span class="creative">•</span>
-        <span class="hardcore">•</span>
+        <span class="dot dot-active">•</span>
+        <span class="dot dot-active">•</span>
+        <span class="dot dot-active">•</span>
       </div>
     </section>
     <section class="features">
@@ -102,10 +102,26 @@
     <section class="logos">
       <h2 class="visually-hidden">Логотипы макетов</h2>
       <ul class="logos-list">
-        <li class="logos-item"><a href="#"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="html-academy"></a></li>
-        <li class="logos-item"><a href="#"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="barbershop"></a></li>
-        <li class="logos-item"><a href="#"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="pink"></a></li>
-        <li class="logos-item"><a href="#"><img src="http://via.placeholder.com/260x180" width="260" height="180" alt="mishka"></a></li>
+        <li class="logos-item">
+          <a href="#">
+          <img src="http://via.placeholder.com/260x180" width="260" height="180" alt="html-academy">
+          </a>
+        </li>
+        <li class="logos-item">
+          <a href="#">
+            <img src="http://via.placeholder.com/260x180" width="260" height="180" alt="barbershop">
+          </a>
+        </li>
+        <li class="logos-item">
+          <a href="#">
+            <img src="http://via.placeholder.com/260x180" width="260" height="180" alt="pink">
+          </a>
+        </li>
+        <li class="logos-item">
+          <a href="#">
+            <img src="http://via.placeholder.com/260x180" width="260" height="180" alt="mishka">
+          </a>
+        </li>
       </ul>
     </section>
     <section class="map">
@@ -125,18 +141,18 @@
       <li class="social-btn social-btn-fb"><a href="#">FB</a></li>
       <li class="social-btn social-btn-in"><a href="#">IN</a></li>
     </ul>
-    <span class="friendship">Давайте дружить, это выгодно!</span>
+    <span class="footer-promo">Давайте дружить, это выгодно!</span>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form action="#" method="post" class="write-us">
-      <label for="name" class="input-name">Ваше имя:</label>
-      <input type="text" name="name" id="name">
-      <label for="email" class="input-email">Ваш e-mail:</label>
-      <input type="email" name="email" id="email">
-      <label for="text" class="input-text">Текст письма:</label>
-      <textarea name="text" cols="30" rows="10" id="text"></textarea>
+      <label class="label-text" for="name">Ваше имя:</label>
+      <input id="name" class="input-text" type="text" name="name">
+      <label class="label-email" for="email">Ваш e-mail:</label>
+      <input id="email" class="input-email" type="email" name="email">
+      <label class="label-text" for="text">Текст письма:</label>
+      <textarea id="text" class="input-textarea" name="text" cols="30" rows="10"></textarea>
       <button type="submit" class="btn btn-red">Отправить</button>
     </form>
   </section>
