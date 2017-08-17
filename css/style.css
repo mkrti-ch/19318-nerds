@@ -2,13 +2,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  font-weight: normal;
+  font-weight: 400;
   font-family: Roboto, Arial, sans-serif;
 }
 
 .slide-text h3 {
   font-size: 55px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 55px;
   color: #000;
 }
@@ -16,6 +16,6 @@ body {
 .features-item h3 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color:  #000;
 }
