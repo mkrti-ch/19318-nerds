@@ -21,7 +21,7 @@
         <li class="site-navigation-item"><a href="shop.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
-      <a href="#">Корзина</a>
+      <a class="header-cart" href="#">Корзина</a>
     </nav>
   </header>
   <main class="container">
@@ -32,21 +32,21 @@
         <div class="slide-text">
           <h3>Долго, дорого, скрупулезно.</h3>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="btn btn-red">Узнать больше</a>
+          <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
         </div>
       </div>
       <div class="slide imac-img">
         <div class="slide-text">
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#" class="btn btn-red">Узнать больше</a>
+          <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
         </div>
       </div>
       <div class="slide ipad-img">
         <div class="slide-text">
           <h3>Только ночь, только хардкор</h3>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="btn btn-red">Узнать больше</a>
+          <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
         </div>
       </div>
       <div class="slider-dots">
@@ -78,6 +78,7 @@
         </li>
       </ul>
     </section>
+    <hr>
     <section class="about">
       <div class="about-description">
         <h2 class="about-us">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -94,9 +95,9 @@
         <h3 class="stats-header">с 2004 года Любим точность во всем:</h3>
         <table class="stats-table">
           <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
+            <th>146<sup>%</sup></th>
+            <th>100<sup>%</sup></th>
+            <th>50<sup>%</sup></th>
           </tr>
           <tr>
             <td>Уровень самоотдачи</td>
@@ -138,29 +139,30 @@
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a href="#modal-write-us" class="btn btn-red">Напишите нам</a>
+        <a href="#modal-write-us" class="btn btn-red btn-write-us">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer>
     <ul class="social">
-      <li class="social-btn social-btn-vk"><a href="#">VK</a></li>
-      <li class="social-btn social-btn-fb"><a href="#">FB</a></li>
-      <li class="social-btn social-btn-in"><a href="#">IN</a></li>
+      <li><a class="social-btn social-btn-vk" href="#">VK</a></li>
+      <li><a class="social-btn social-btn-fb" href="#">FB</a></li>
+      <li><a class="social-btn social-btn-in" href="#">IN</a></li>
     </ul>
     <span class="footer-promo">Давайте дружить, это выгодно!</span>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
-  <section class="modal modal-write-us">
+  <section class="modal-write-us">
     <h2>Напишите нам</h2>
     <form action="#" method="post" class="write-us">
       <label class="label-text" for="name">Ваше имя:</label>
-      <input id="name" class="input-text" type="text" name="name">
+      <input id="name" class="input-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
       <label class="label-email" for="email">Ваш e-mail:</label>
-      <input id="email" class="input-email" type="email" name="email">
+      <input id="email" class="input-email" type="email" name="email" placeholder="Для отправки ответа">
       <label class="label-text" for="text">Текст письма:</label>
-      <textarea id="text" class="input-textarea" name="text" cols="30" rows="10"></textarea>
+      <textarea id="text" class="input-textarea" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       <button type="submit" class="btn btn-red">Отправить</button>
+      <img class="btn-close" src="img/close-cross.svg" alt="Закрыть окно">
     </form>
   </section>
 </body>

@@ -65,12 +65,12 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <div class="catalog-sort">
           <span class="sort-header">Сортировать:</span>
-          <a href="#" class="sort-item sort-item-selected">По цене</a>
+          <a class="sort-item sort-item-selected">По цене</a>
           <a href="#" class="sort-item">По типу</a>
           <a href="#" class="sort-item">По названию</a>
           <div class="catalog-arrows">
-            <a href="#" class="catalog-arrow-down">down</a>
-            <a href="#" class="catalog-arrow-up">up</a>
+            <a class="arrow arrow-down arrow-current" href="#">по убыванию</a>
+            <a class="arrow arrow-up" href="#">по возрастанию</a>
           </div>
         </div>
         <div class="catalog-items">
@@ -81,7 +81,7 @@
             <div class="catalog-item-info">
               <h3>SEDONA</h3>
               <p>Информационный сайт для туристов</p>
-              <a href="#" class="btn btn-red">9 900 РУБ.</a>
+              <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -91,7 +91,7 @@
             <div class="catalog-item-info">
               <h3>PINK APP</h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#" class="btn btn-red">9 900 РУБ.</a>
+              <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -101,7 +101,7 @@
             <div class="catalog-item-info">
               <h3>BARBERSHOP</h3>
               <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <a href="#" class="btn btn-red">9 900 РУБ.</a>
+              <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -111,7 +111,7 @@
             <div class="catalog-item-info">
               <h3>MISHKA</h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#" class="btn btn-red">9 900 РУБ.</a>
+              <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -121,7 +121,7 @@
             <div class="catalog-item-info">
               <h3>A PLUS</h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a href="#" class="btn btn-red">9 900 РУБ.</a>
+              <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
             </div>
           </article>
           <article class="catalog-item">
@@ -131,12 +131,12 @@
             <div class="catalog-item-info">
               <h3>КВАСТ</h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#" class="btn btn-red">9 900 РУБ.</a>
+              <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
             </div>
           </article>
         </div>
         <ul class="catalog-paginator">
-          <li class="paginator paginator-active"><a>1</a></li>
+          <li class="paginator paginator-current"><a>1</a></li>
           <li class="paginator"><a href="#">2</a></li>
           <li class="paginator"><a href="#">3</a></li>
           <li class="paginator paginator-next"><a href="#">Следующая</a></li>
@@ -150,7 +150,7 @@
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a href="#modal-write-us" class="btn btn-red">Напишите нам</a>
+        <a href="#modal-write-us" class="btn btn-red btn-write-us">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -166,13 +166,14 @@
   <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
     <form action="#" method="post" class="write-us">
-      <label for="name" class="input-name">Ваше имя:</label>
-      <input type="text" name="name" id="name">
-      <label for="email" class="input-email">Ваш e-mail:</label>
-      <input type="email" name="email" id="email">
-      <label for="text" class="input-text">Текст письма:</label>
-      <textarea name="text" cols="30" rows="10" id="text"></textarea>
+      <label class="label-text" for="name">Ваше имя:</label>
+      <input id="name" class="input-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+      <label class="label-email" for="email">Ваш e-mail:</label>
+      <input id="email" class="input-email" type="email" name="email" placeholder="Для отправки ответа">
+      <label class="label-text" for="text">Текст письма:</label>
+      <textarea id="text" class="input-textarea" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       <button type="submit" class="btn btn-red">Отправить</button>
+      <img class="btn-close" src="img/close-cross.svg" alt="Закрыть окно">
     </form>
   </section>
 </body>
