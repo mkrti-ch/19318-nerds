@@ -241,6 +241,7 @@ body {
 
 .about {
   border-bottom: 2px solid #eeeeee;
+  display: flex;
 }
 
 .about-us {
@@ -282,6 +283,14 @@ body {
 
 .logos {
   border-bottom: 2px solid #eeeeee;
+}
+
+.logos-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .logos-item {
@@ -504,7 +513,9 @@ a.arrow {
 
 
 
-
+.modal-write-us {
+  display: none;
+}
 
 
 
