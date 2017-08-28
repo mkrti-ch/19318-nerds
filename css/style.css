@@ -7,9 +7,10 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
-hr {
-  width: 100%;
-  color: #eeeeee;
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -128,6 +129,10 @@ hr {
   background-color: #eeeeee;
 }
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+
   text-transform: uppercase;
 }
 
@@ -137,6 +142,17 @@ hr {
 
 .main-header-logo:active {
   opacity: 0.3;
+}
+
+.site-navigation {
+  list-style: none;
+  margin-top: 30px;
+  width: 568px;
+}
+
+.site-navigation-item {
+  display: inline-block;
+  margin-right: 42px;
 }
 
 .site-navigation-item a, .header-cart {
@@ -160,9 +176,28 @@ hr {
   border-bottom: 2px solid #fb565a;
 }
 
+.header-cart {
+  margin-top: 30px;
+}
+
+.header-cart::before {
+  content: "";
+
+  position: absolute;
+  top: 83px;
+  right: 239px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+}
+
 /* --------------- slider section --------------- */
 .slider {
   background-color: #eeeeee;
+  display: inline-block;
 }
 
 .slide-text h3 {
@@ -180,6 +215,19 @@ hr {
 
 .features {
   border-bottom: 2px solid #eeeeee;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  width: 300px;
+  margin-right: 99px;
 }
 
 .features-item h3 {
@@ -265,6 +313,19 @@ hr {
 
 /* --------------- footer section --------------- */
 
+.main-footer {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 280px;
+  margin-right: 120px;
+}
+
 .social li {
   display: inline-block;
 }
@@ -275,10 +336,12 @@ hr {
   height: 78px;
   background-color: #e1e1e1;
   margin-right: 10px;
-  vertical-align: middle;
+  vertical-align: top;
+  text-align: center;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  font-size: 0;
 }
 
 .social-btn:hover {
@@ -299,6 +362,10 @@ hr {
 
 .social-btn-in {
   background-image: url("../img/insta-icon.svg");
+}
+
+.promo-text {
+
 }
 
 .footer-promo {
