@@ -12,7 +12,8 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <nav class="main-navigation">
+      <nav class="main-navigation
+">
         <a href="index.html" class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
@@ -22,7 +23,7 @@
           <li class="site-navigation-item navigation-item-current"><a>Магазин</a></li>
           <li class="site-navigation-item"><a href="#">Контакты</a></li>
         </ul>
-        <a class="header-cart" href="#">Корзина</a>
+        <a class="header-cart-link" href="#">Корзина</a>
       </nav>
     </div>
     <h1>Магазин готовых шаблонов</h1>
@@ -40,7 +41,6 @@
               <input class="input-text" type="text" value="0" id="from">
               <label class="label-text" for="to">до</label>
               <input class="input-text" type="text" value="15 000" id="to"> -->
-
               <div class="range">
                 <div class="scale">
                   <div class="scale-green"></div>
@@ -177,7 +177,7 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map.jpg" width="1440" height="416" alt="stats-pic">
+      <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="stats-pic">
       <div class="map-write-us">
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -186,15 +186,19 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer container">
-    <ul class="social">
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-flex">
+        <ul class="social">
           <li><a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">VK</span></a></li>
           <li><a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">FB</span></a></li>
           <li><a class="social-btn social-btn-in" href="#"><span class="visually-hidden">IN</span></a></li>
-    </ul>
-    <div class="promo-text">
-      <span class="footer-promo">Давайте дружить, это выгодно!</span>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+        </ul>
+        <div class="promo-text">
+          <span class="footer-promo">Давайте дружить, это выгодно!</span>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </div>
   </footer>
   <section class="modal-write-us">

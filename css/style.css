@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+  outline: 2px solid blue;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -91,6 +92,13 @@ body {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
+.catalog-paginator {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 2px solid green;
+}
+
 .paginator {
   color: #000;
   background-color: #eeeeee;
@@ -127,16 +135,27 @@ body {
 }
 
 /* --------------- header section --------------- */
+
+
+.main-header h1 {
+  text-align: center;
+}
+
 .main-header {
   background-color: #eeeeee;
   margin-bottom: 80px;
 }
 .main-navigation {
+  outline: 2px solid green;
   display: flex;
   justify-content: space-between;
   padding-top: 48px;
 
   text-transform: uppercase;
+}
+
+.main-header-logo {
+  outline: 2px solid orange;
 }
 
 .main-header-logo:hover {
@@ -148,29 +167,32 @@ body {
 }
 
 .site-navigation {
+  margin: 0;
+  outline: 2px solid orange;
   list-style: none;
   margin-top: 30px;
   width: 568px;
 }
 
 .site-navigation-item {
+  outline: 2px solid gold;
   display: inline-block;
   margin-right: 42px;
 }
 
-.site-navigation-item a, .header-cart {
+.site-navigation-item a, .header-cart-link {
   color: #000;
 }
 
-.site-navigation-item a, .header-cart {
+.site-navigation-item a, .header-cart-link {
   text-decoration: none;
 }
 
-.site-navigation-item a:hover, .header-cart:hover {
+.site-navigation-item a:hover, .header-cart-link:hover {
   color: #fb565a;
 }
 
-.site-navigation-item a:active, .header-cart:active {
+.site-navigation-item a:active, .header-cart-link:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -181,15 +203,17 @@ body {
 }
 
 .header-cart {
+  outline: 2px solid orange;
   margin-top: 30px;
+  position: relative;
 }
 
 .header-cart::before {
   content: "";
 
   position: absolute;
-  top: 83px;
-  right: 239px;
+  top: 3px;
+  right: 99px;
 
   width: 18px;
   height: 18px;
@@ -198,10 +222,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.header-cart-link {
+  outline: 2px solid gold;
+}
+
 /* --------------- slider section --------------- */
 .slider {
+  outline: 2px solid green;
   background-color: #eeeeee;
-  display: inline-block;
 }
 
 .slide-text h3 {
@@ -218,6 +246,7 @@ body {
 /* --------------- features section --------------- */
 
 .features {
+  outline: 2px solid green;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
 }
@@ -231,6 +260,7 @@ body {
 }
 
 .features-item {
+  outline: 2px solid orange;
   width: 300px;
   margin-right: 99px;
 }
@@ -250,6 +280,7 @@ body {
 /* --------------- about section --------------- */
 
 .about {
+  outline: 2px solid green;
   border-bottom: 2px solid #eeeeee;
   display: flex;
   margin-bottom: 45px;
@@ -262,6 +293,7 @@ body {
 }
 
 .about-description {
+  outline: 2px solid orange;
   margin-bottom: 45px;
 }
 
@@ -270,7 +302,12 @@ body {
   text-transform: uppercase;
 }
 
+.about-stats {
+  outline: 2px solid orange;
+}
+
 .development-list {
+  margin: 0;
   list-style: none;
 }
 
@@ -301,6 +338,7 @@ body {
 /* --------------- logos section --------------- */
 
 .logos {
+  outline: 2px solid green;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
 }
@@ -311,9 +349,11 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  align-items: center;
 }
 
 .logos-item {
+  outline: 2px solid orange;
   opacity: 0.2;
 }
 
@@ -327,11 +367,32 @@ body {
 
 /* --------------- maps section --------------- */
 
+.map {
+  /* position: relative; */
+}
+
+.map-img {
+  display: block;
+  margin:  0 auto;
+}
+
+.map-write-us {
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: #fff;
+}
+
 .map-write-us h2 {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: #000;
+  margin-top: 40px;
 }
 
 .map-write-us p {
@@ -343,11 +404,15 @@ body {
 /* --------------- footer section --------------- */
 
 .main-footer {
+  outline: 2px solid green;
+}
+
+.footer-flex {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .social {
+  outline: 2px solid orange;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -393,7 +458,7 @@ body {
 }
 
 .promo-text {
-
+  outline: 2px solid orange;
 }
 
 .footer-promo {
@@ -426,20 +491,28 @@ footer p {
 /* --------------- catalog section --------------- */
 
 .catalog-left {
+  outline: 2px solid green;
   width: 300px;
 }
 
+.catalog-sort {
+  outline: 2px solid green;
+}
+
 .catalog-items {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  outline: 2px solid green;
+}
+
+.catalog-item {
+  outline: 2px solid orange;
+}
+
+.catalog-item figure {
+  margin: 0;
+  margin-right: 50px;
+  margin-top: 25px;
 }
 
 .main-header h1 {
@@ -450,6 +523,12 @@ footer p {
 
 .cost {
   display: block;
+}
+
+.form-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .cost h3,
@@ -490,6 +569,10 @@ footer p {
 .sort-item:active,
 .sort-item-selected {
   opacity: 1;
+}
+
+.catalog-arrows {
+  display: inline-block;
 }
 
 .arrow:first-child {
