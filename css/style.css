@@ -493,6 +493,7 @@ footer p {
 .catalog-left {
   outline: 2px solid green;
   width: 300px;
+  margin-right: 140px;
 }
 
 .catalog-sort {
@@ -507,12 +508,16 @@ footer p {
 
 .catalog-item {
   outline: 2px solid orange;
+  margin-top: 33px;
+  margin-right: 40px;
+}
+
+.catalog-item:hover .catalog-item-info {
+  display: block;
 }
 
 .catalog-item figure {
   margin: 0;
-  margin-right: 50px;
-  margin-top: 25px;
 }
 
 .main-header h1 {
@@ -617,6 +622,10 @@ a.arrow {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.catalog-item-info {
+  display: none;
+}
+
 .catalog-item-info h3 {
   font-size: 18px;
   line-height: 30px;
@@ -627,6 +636,7 @@ a.arrow {
 .catalog-item-info p {
   line-height: 18px;
   color: #666666;
+  display: block;
 }
 
 
