@@ -89,17 +89,24 @@ body {
 .btn-grey:active {
   color: #959595;
   background-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 #ce961f;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 .catalog-paginator {
   margin: 0;
+  margin-top: 25px;
+  margin-bottom: 60px;
   padding: 0;
   list-style: none;
   outline: 2px solid green;
 }
 
+.catalog-paginator li {
+  display: inline-block;
+}
+
 .paginator {
+  display: inline-block;
   color: #000;
   background-color: #eeeeee;
   width: 50px;
@@ -108,6 +115,8 @@ body {
   text-decoration: none;
   text-align: center;
   line-height: 50px;
+  border-radius: 3px;
+  margin-right: 10px;
 }
 
 .paginator:hover {
@@ -115,15 +124,21 @@ body {
 }
 
 .paginator:active {
+  color: #959595;
   background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
-.paginator-current {
+.paginator-current,
+.pagintor-current:hover,
+.paginator-current:active {
+  color: #000;
   background-color: #fff;
-  border: 2px solid #dbdbdb;
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   border-radius: 2px;
+  box-shadow: inset 3px 3px rgb(238, 238, 238),
+              inset -3px -3px rgb(238, 238, 238);
 }
 
 .paginator-current:hover {
@@ -134,16 +149,28 @@ body {
   text-decoration: none;
 }
 
+.paginator-next {
+  width: 260px;
+}
+
 /* --------------- header section --------------- */
 
 
 .main-header h1 {
+  display: inline-block;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 108px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  vertical-align: top;
   text-align: center;
 }
 
 .main-header {
   background-color: #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 58px;
 }
 .main-navigation {
   outline: 2px solid green;
@@ -492,24 +519,76 @@ footer p {
 
 .catalog-left {
   outline: 2px solid green;
-  width: 300px;
   margin-right: 140px;
+}
+
+.catalog-left form {
+  width: 260px;
+}
+
+.catalog-left h3 {
+  margin: 0;
 }
 
 .catalog-sort {
   outline: 2px solid green;
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-types {
+  margin-left: 209px;
+}
+
+.sort-types a {
+  display: inline-block;
+  padding: 0 7px 0 15px;
+  vertical-align: top;
+  list-style: none;
 }
 
 .catalog-items {
+  margin-top: 47px;
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
   outline: 2px solid green;
 }
 
 .catalog-item {
+  position: relative;
   outline: 2px solid orange;
-  margin-top: 33px;
-  margin-right: 40px;
+  margin-bottom: 33px;
+  padding-top: 40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+}
+
+.catalog-item-info {
+  position: absolute;
+  bottom: 2px;
+  min-height: 231px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #eee;
+  width: 100%;
+  display: none;
+}
+
+.catalog-item-info h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.catalog-item-info p {
+  line-height: 18px;
+  color: #666666;
+  display: block;
 }
 
 .catalog-item:hover .catalog-item-info {
@@ -518,16 +597,63 @@ footer p {
 
 .catalog-item figure {
   margin: 0;
-}
-
-.main-header h1 {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000;
+  line-height: 0;
 }
 
 .cost {
   display: block;
+}
+
+.cost .cost-header {
+  margin-top: 4px;
+  margin-bottom: 53px;
+}
+
+.range-controls {
+  position: relative;
+  padding: 39px 20px;
+  margin-bottom: 16px;
+  background: #eeeeee;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0px;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ababab;
+  border: 8px solid white;
+  border-radius: 50%;
+  box-shadow: 0 3px 1px 0 #cfcfcf;
+
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 19px;
+  box-sizing: border-box;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+  box-sizing: border-box;
 }
 
 .form-group ul {
@@ -536,11 +662,15 @@ footer p {
   list-style: none;
 }
 
+.sort-header {
+  margin-top: -8px;
+}
+
 .cost h3,
 .form-group h3,
 .sort-header {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
@@ -617,34 +747,6 @@ a.arrow {
 .arrow-current::before {
   opacity: 1;
 }
-
-.catalog-image img {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.catalog-item-info {
-  display: none;
-}
-
-.catalog-item-info h3 {
-  font-size: 18px;
-  line-height: 30px;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.catalog-item-info p {
-  line-height: 18px;
-  color: #666666;
-  display: block;
-}
-
-
-
-
-
-
-
 
 .modal-write-us, .slide-hidden {
   display: none;

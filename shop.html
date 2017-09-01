@@ -37,12 +37,18 @@
         <aside class="catalog-left">
           <form action="#" method="post">
             <div class="cost">
-              <h3>Стоимость:</h3>
-              <!-- <input type="range" min="0" max="100" step="1" value="50" class="input-range">
-              <label class="label-text" for="from">от</label>
-              <input class="input-text" type="text" value="0" id="from">
-              <label class="label-text" for="to">до</label>
-              <input class="input-text" type="text" value="15 000" id="to"> -->
+              <h3 class="cost-header">Стоимость:</h3>
+              <div class="range-controls">
+
+                  <div class="scale">
+                    <div class="bar">
+                      <div class="toggle toggle-min">
+                      </div>
+                      <div class="toggle toggle-max">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               <div class="range">
                 <div class="scale">
                   <div class="scale-green"></div>
@@ -98,9 +104,11 @@
           <h2 class="visually-hidden">Каталог товаров</h2>
           <div class="catalog-sort">
             <span class="sort-header">Сортировать:</span>
-            <a class="sort-item sort-item-selected">По цене</a>
-            <a href="#" class="sort-item">По типу</a>
-            <a href="#" class="sort-item">По названию</a>
+            <div class="sort-types">
+              <a class="sort-item sort-item-selected">По цене</a>
+              <a href="#" class="sort-item">По типу</a>
+              <a href="#" class="sort-item">По названию</a>
+            </div>
             <div class="catalog-arrows">
               <a class="arrow arrow-down arrow-current" href="#">по убыванию</a>
               <a class="arrow arrow-up" href="#">по возрастанию</a>
@@ -169,10 +177,10 @@
             </article>
           </div>
           <ul class="catalog-paginator">
-            <li class="paginator paginator-current"><a>1</a></li>
-            <li class="paginator"><a href="#">2</a></li>
-            <li class="paginator"><a href="#">3</a></li>
-            <li class="paginator paginator-next"><a href="#">Следующая</a></li>
+            <li><a class="paginator paginator-current"a>1</a></li>
+            <li><a class="paginator" href="#">2</a></li>
+            <li><a class="paginator" href="#">3</a></li>
+            <li><a class="paginator paginator-next" href="#">Следующая</a></li>
           </ul>
         </section>
     </section>
