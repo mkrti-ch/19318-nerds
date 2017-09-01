@@ -34,7 +34,7 @@ body {
   color: #fff;
   text-decoration: none;
   line-height: 18px;
-  padding: 20px 55px;
+  padding: 20px 40px;
   border-radius: 3px;
 }
 
@@ -170,7 +170,7 @@ body {
 
 .main-header {
   background-color: #eeeeee;
-  margin-bottom: 58px;
+  margin-bottom: 80px;
 }
 .main-navigation {
   outline: 2px solid green;
@@ -204,7 +204,8 @@ body {
 .site-navigation-item {
   outline: 2px solid gold;
   display: inline-block;
-  margin-right: 42px;
+  margin-right: 41px;
+  margin-left: 2px;
 }
 
 .site-navigation-item a, .header-cart-link {
@@ -259,7 +260,13 @@ body {
   background-color: #eeeeee;
 }
 
+.slide-text {
+  display: inline-block;
+}
+
 .slide-text h3 {
+  margin-top: 71px;
+  margin-bottom: 26px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -268,6 +275,14 @@ body {
 
 .slide-text p {
   color: #283136;
+  margin-bottom: 40px;
+}
+
+.iphone-img {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  height: 431px;
+  background-position: 93% 11px;
 }
 
 /* --------------- features section --------------- */
