@@ -34,7 +34,7 @@ body {
   color: #fff;
   text-decoration: none;
   line-height: 18px;
-  padding: 20px 40px;
+  padding: 16px 40px;
   border-radius: 3px;
 }
 
@@ -156,6 +156,11 @@ body {
 /* --------------- header section --------------- */
 
 
+.main-header {
+  background-color: #eeeeee;
+  margin-bottom: 50px;
+}
+
 .main-header h1 {
   display: inline-block;
   width: 100%;
@@ -168,10 +173,6 @@ body {
   text-align: center;
 }
 
-.main-header {
-  background-color: #eeeeee;
-  margin-bottom: 80px;
-}
 .main-navigation {
   outline: 2px solid green;
   display: flex;
@@ -290,7 +291,7 @@ body {
 .features {
   outline: 2px solid green;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 71px;
 }
 
 .features-list {
@@ -304,7 +305,7 @@ body {
 .features-item {
   outline: 2px solid orange;
   width: 300px;
-  margin-right: 99px;
+  margin-right: 100px;
 }
 
 .features-item .btn {
@@ -315,8 +316,14 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  margin-top: 17px;
   color:  #000;
   text-transform: uppercase;
+}
+
+.features-item p {
+  margin-bottom: 33px;
 }
 
 /* --------------- about section --------------- */
@@ -325,10 +332,12 @@ body {
   outline: 2px solid green;
   border-bottom: 2px solid #eeeeee;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 45px;
 }
 
 .about-us {
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
   color: #000;
@@ -337,19 +346,30 @@ body {
 .about-description {
   outline: 2px solid orange;
   margin-bottom: 45px;
+  width: 680px;
+}
+
+.about-description p {
+  margin: 0;
+  margin-top: 35px;
 }
 
 .about-description h3, .stats-header {
+  margin: 0;
+  margin-top: 39px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .about-stats {
+  width: 360px;
   outline: 2px solid orange;
 }
 
 .development-list {
   margin: 0;
+  margin-top: 12px;
   list-style: none;
 }
 
@@ -363,7 +383,7 @@ body {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  margin: 0 11px 4px -37px;
+  margin: 0 8px 4px -37px;
 }
 
 .stats-table th {
