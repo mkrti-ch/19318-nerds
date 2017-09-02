@@ -170,7 +170,6 @@ body {
 }
 
 .shop-main-header {
-  background-color: #eeeeee;
   margin-bottom: 59px;
 }
 
@@ -648,9 +647,20 @@ footer p {
   position: relative;
   outline: 2px solid orange;
   margin-bottom: 33px;
-  padding-top: 40px;
+  background-repeat: no-repeat;
+}
+
+.catalog-item::before {
+  opacity:  .12;
+  content: "";
+  display:block;
+  height: 40px;
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
 }
 
 .catalog-item-info {
