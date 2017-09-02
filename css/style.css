@@ -180,7 +180,7 @@ html {
 
 .main-header {
   background-color: #eeeeee;
-  margin-bottom: 74px;
+  margin-bottom: 79px;
 }
 
 .shop-main-header {
@@ -284,6 +284,7 @@ html {
 
 .slide-text {
   display: inline-block;
+  padding-bottom: 80px;
 }
 
 .slide-text h3 {
@@ -303,7 +304,6 @@ html {
 .iphone-img {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  height: 431px;
   background-position: 433px 13px;
 }
 
