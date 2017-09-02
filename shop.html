@@ -35,20 +35,19 @@
       <h2 class="visually-hidden">Каталог товаров</h2>
       <div class="container catalog-flex">
         <aside class="catalog-left">
-          <form action="#" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <div class="cost">
               <h3 class="cost-header">Стоимость:</h3>
               <div class="range-controls">
-
-                  <div class="scale">
-                    <div class="bar">
-                      <div class="toggle toggle-min">
-                      </div>
-                      <div class="toggle toggle-max">
-                      </div>
+                <div class="scale">
+                  <div class="bar">
+                    <div class="toggle toggle-min">
+                    </div>
+                    <div class="toggle toggle-max">
                     </div>
                   </div>
                 </div>
+              </div>
               <div class="range">
                 <div class="scale">
                   <div class="scale-green"></div>
@@ -56,46 +55,56 @@
                 <div class="controls-min"></div>
                 <div class="controls-max"></div>
               </div>
+              <div class="price-controls">
+                <label class="price-min">
+                  <span>от</span>
+                  <input class="price-min" type="text" name="price-min" value="0">
+                </label>
+                <label class="price-max">
+                  <span>до</span>
+                  <input class="price-max" type="text" name="price-max" value="15 000">
+                </label>
+              </div>
             </div>
             <div class="form-group">
               <h3>Сетка:</h3>
-              <ul>
-                <li>
-                  <input type="radio" name="grid" id="adaptive" value="adaptive" class="input-radio">
+              <div class="layout-grid">
+                <p>
+                  <input type="radio" name="grid" id="adaptive" value="adaptive" class="input-radio" checked>
                   <label for="adaptive" class="label-radio">Адаптивная</label>
-                </li>
-                <li>
+                </p>
+                <p>
                   <input type="radio" name="grid" id="fixed" value="fixed" class="input-radio">
                   <label for="fixed" class="label-radio">Фиксированная</label>
-                </li>
-                <li>
+                </p>
+                <p>
                   <input type="radio" name="grid" id="reflow" value="reflow" class="input-radio">
                   <label for="reflow" class="label-radio">Резиновая</label>
-                </li>
-              </ul>
+                </p>
+              </div>
               <h3>Особенности:</h3>
-              <ul>
-                <li>
+              <div class="qualities">
+                <p>
                   <input type="checkbox" name="slider" id="slider" class="input-checkbox" checked>
                   <label for="slider" class="label-checkbox">Слайдер</label>
-                </li>
-                <li>
+                </p>
+                <p>
                   <input type="checkbox" name="advantages" id="advantages" class="input-checkbox">
                   <label for="advantages" class="label-checkbox">Блок преимуществ</label>
-                </li>
-                <li>
+                </p>
+                <p>
                   <input type="checkbox" name="news" id="news" class="input-checkbox" checked>
                   <label for="news" class="label-checkbox">Новости</label>
-                </li>
-                <li>
+                </p>
+                <p>
                   <input type="checkbox" name="gallery" id="gallery" class="input-checkbox">
                   <label for="gallery" class="label-checkbox">Галерея</label>
-                </li>
-                <li>
+                </p>
+                <p>
                   <input type="checkbox" name="trash" id="trash" class="input-checkbox">
                   <label for="trash" class="label-checkbox">Корзина</label>
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
             <button type="submit" class="btn btn-grey">Показать</button>
           </form>
@@ -121,7 +130,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>SEDONA</h3>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт<br> для туристов</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -131,7 +140,8 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>PINK APP</h3>
-                <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+                <p>Продуктовый лендинг
+                  <br> приложения для iOS и Android</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -141,7 +151,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>BARBERSHOP</h3>
-                <p>Сайт салоны красоты. Для мужчин, да.</p>
+                <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -151,7 +161,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>MISHKA</h3>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <p>Интернет-магазин<br> вязаных игрушек</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -161,7 +171,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>A PLUS</h3>
-                <p>Лендинг курсов повышения квалификации</p>
+                <p>Лендинг курсов повышения<br> квалификации</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -171,13 +181,13 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>КВАСТ</h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
           </div>
           <ul class="catalog-paginator">
-            <li><a class="paginator paginator-current"a>1</a></li>
+            <li><a class="paginator paginator-current" a>1</a></li>
             <li><a class="paginator" href="#">2</a></li>
             <li><a class="paginator" href="#">3</a></li>
             <li><a class="paginator paginator-next" href="#">Следующая</a></li>
@@ -193,6 +203,9 @@
         <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
         <p class="phone">тел. +7 (812) 275-75-75</p>
         <a href="#modal-write-us" class="btn btn-red btn-write-us">Напишите нам</a>
+      </div>
+      <div class="map-marker">
+        <img class="map-marker" src="img/map-marker.png" alt="marker">
       </div>
     </section>
   </main>
