@@ -932,6 +932,7 @@ footer p {
   display: -ms-flexbox;
   display: flex;
 
+  width: 760px;
   margin-top: 47px;
 
   -ms-flex-wrap: wrap;
