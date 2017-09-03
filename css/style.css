@@ -489,7 +489,7 @@ html {
 
   width: 25px;
   height: 2px;
-  margin: 0 8px 4px -37px;
+  margin: 0 10px 4px -38px;
 
   content: '';
 
@@ -1028,13 +1028,13 @@ footer p {
 
 .cost .cost-header {
   margin-top: 4px;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
 }
 
 .range-controls {
   position: relative;
 
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   padding: 39px 20px;
 
   border-radius: 5px;
@@ -1219,7 +1219,7 @@ footer p {
 
 .form-group input[type='radio']:checked + .label-radio::before {
   position: absolute;
-  top: 1px;
+  top: 3px;
   left: 1px;
 
   width: 25px;
@@ -1249,7 +1249,7 @@ footer p {
 
 .form-group input[type='checkbox']:checked + .label-checkbox::before {
   position: absolute;
-  top: 1px;
+  top: 3px;
   left: 1px;
 
   width: 25px;
@@ -1303,7 +1303,7 @@ footer p {
 }
 
 .arrow:first-child {
-  margin-right: 15px;
+  margin-right: 14px;
 }
 
 a.arrow {
