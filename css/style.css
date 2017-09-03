@@ -434,6 +434,12 @@ html {
   top: -10px;
 }
 
+.stats-table sup {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 10px;
+}
+
 
 
 /* --------------- logos section --------------- */
@@ -525,6 +531,10 @@ html {
 /* --------------- footer section --------------- */
 
 
+.main-footer {
+  margin-bottom: 50px;
+}
+
 .footer-flex {
   display: flex;
 }
@@ -611,6 +621,15 @@ footer p {
 
 /* --------------- catalog section --------------- */
 
+
+.catalog-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
 .catalog-left {
   margin-right: 140px;
 }
@@ -643,7 +662,6 @@ footer p {
 .catalog-items {
   margin-top: 47px;
   display: flex;
-  flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -993,12 +1011,4 @@ a.arrow {
 .modal-write-us,
 .slide-hidden {
   display: none;
-}
-
-.catalog-flex {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
 }
