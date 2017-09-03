@@ -294,7 +294,7 @@ html {
 }
 
 .navigation-item-current a {
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 
   border-bottom: 2px solid #fb565a;
 }
@@ -418,7 +418,7 @@ html {
   display: -ms-flexbox;
   display: flex;
 
-  margin-bottom: 68px;
+  margin-bottom: 51px;
 
   border-bottom: 2px solid #eee;
 
@@ -439,7 +439,7 @@ html {
 
 .about-description {
   width: 680px;
-  margin-bottom: 45px;
+  margin-bottom: 62px;
 }
 
 .about-description p {
@@ -495,28 +495,6 @@ html {
 
   background-color: #fb565a;
 }
-
-/* .stats-table {
-  margin-top: 10px;
-}
-
-.stats-table th {
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 10px;
-
-  color: #000;
-}
-
-.stats-table th sup {
-  top: -10px;
-}
-
-.stats-table sup {
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 10px;
-} */
 
 .stats-percent {
   position: relative;
@@ -583,7 +561,7 @@ html {
 /* --------------- logos section --------------- */
 
 .logos {
-  margin-bottom: 77px;
+  margin-bottom: 80px;
 
   border-bottom: 2px solid #eee;
 }
@@ -659,7 +637,7 @@ html {
   font-weight: bold;
   line-height: 30px;
 
-  margin-top: 52px;
+  margin-top: 49px;
   margin-bottom: 23px;
 
   color: #000;
@@ -894,7 +872,7 @@ footer p {
 
 
 .catalog {
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 
 .catalog-flex {
