@@ -147,6 +147,7 @@ html {
 
 .catalog-paginator li {
   display: inline-block;
+
   vertical-align: top;
 }
 
@@ -154,13 +155,13 @@ html {
   line-height: 54px;
 
   display: inline-block;
-  vertical-align: top;
 
   width: 50px;
   height: 50px;
   margin-right: 7px;
 
   text-align: center;
+  vertical-align: top;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -269,10 +270,11 @@ html {
 
 .site-navigation-item {
   display: inline-block;
-  vertical-align: top;
 
   margin-right: 39px;
   margin-left: 3px;
+
+  vertical-align: top;
 }
 
 .site-navigation-item a,
@@ -332,11 +334,12 @@ html {
 }
 
 .slide-text {
-  width: 460px;
   display: inline-block;
-  vertical-align: top;
 
+  width: 460px;
   padding-bottom: 80px;
+
+  vertical-align: top;
 }
 
 .slide-text h3 {
@@ -552,13 +555,13 @@ html {
 
 .development-item::before {
   display: inline-block;
-  vertical-align: baseline;
 
   width: 25px;
   height: 2px;
   margin: 0 10px 4px -38px;
 
   content: '';
+  vertical-align: baseline;
 
   background-color: #fb565a;
 }
@@ -654,6 +657,7 @@ html {
 
 .logos-item {
   position: relative;
+
   width: 260px;
 }
 
@@ -661,7 +665,7 @@ html {
   opacity: .2;
 }
 
-.logos-item .htmlacademy{
+.logos-item .htmlacademy {
   position: absolute;
   top: 11px;
 }
@@ -685,33 +689,42 @@ html {
 }
 
 .logos-item:nth-child(1)::after {
-  content: "";
   position: absolute;
-  width: 2px;
-  height: 53px;
   top: 13px;
   left: 248px;
-  background-color: #eeeeee;
+
+  width: 2px;
+  height: 53px;
+
+  content: '';
+
+  background-color: #eee;
 }
 
 .logos-item:nth-child(2)::after {
-  content: "";
   position: absolute;
-  width: 2px;
-  height: 53px;
   top: 13px;
   left: 259px;
-  background-color: #eeeeee;
+
+  width: 2px;
+  height: 53px;
+
+  content: '';
+
+  background-color: #eee;
 }
 
 .logos-item:nth-child(3)::after {
-  content: "";
   position: absolute;
-  width: 2px;
-  height: 53px;
   top: 13px;
   left: 269px;
-  background-color: #eeeeee;
+
+  width: 2px;
+  height: 53px;
+
+  content: '';
+
+  background-color: #eee;
 }
 
 .logo-img:hover {
@@ -809,7 +822,8 @@ html {
 
 .social li {
   display: inline-block;
-    vertical-align: top;
+
+  vertical-align: top;
 }
 
 .social-btn {
@@ -854,10 +868,11 @@ html {
   line-height: 36px;
 
   display: inline-block;
-  vertical-align: top;
 
   margin: 0;
   margin-top: 4px;
+
+  vertical-align: top;
 
   color: #000;
 }
@@ -1468,6 +1483,7 @@ footer p {
 
 .catalog-arrows {
   display: inline-block;
+
   vertical-align: top;
 }
 
@@ -1479,14 +1495,15 @@ a.arrow {
   font-size: 0;
 
   display: inline-block;
+
   vertical-align: baseline;
 }
 
 .arrow::before {
   display: inline-block;
-  vertical-align: top;
 
   content: '';
+  vertical-align: top;
 
   opacity: .3;
   border: 11px solid #000;
