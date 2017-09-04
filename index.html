@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -28,32 +28,37 @@
       </nav>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер сайта</h2>
-        <div class="slide iphone-img">
-          <div class="slide-text">
-            <h3>Долго, дорого,<br> скрупулезно.</h3>
-            <p>Математически выверенный дизайн
-              <br> для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
-          </div>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
         </div>
-        <div class="slide imac-img slide-hidden">
-          <div class="slide-text">
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
+        <div class="slides">
+          <div class="slide iphone-img">
+            <div class="slide-text">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p>Математически выверенный дизайн
+                <br> для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
+            </div>
           </div>
-        </div>
-        <div class="slide ipad-img slide-hidden">
-          <div class="slide-text">
-            <h3>Только ночь, только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
+          <div class="slide imac-img">
+            <div class="slide-text">
+              <h3>Любим математику<br> как никто другой</h3>
+              <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+              <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
+            </div>
           </div>
-        </div>
-        <div class="slider-dots">
-          <span class="dot dot-active">•</span>
-          <span class="dot">•</span>
-          <span class="dot">•</span>
+          <div class="slide ipad-img">
+            <div class="slide-text">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="btn btn-red btn-slider">Узнать больше</a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -128,24 +133,24 @@
         <h2 class="visually-hidden">Логотипы макетов</h2>
         <ul class="logos-list">
           <li class="logos-item">
-            <a href="#">
-              <img src="img/logo-1.png" width="199" height="68" alt="html-academy">
-              </a>
+            <a class="htmlacademy" href="#">
+              <img class="logo-img" src="img/logo-1.png" width="199" height="68" alt="html-academy">
+            </a>
           </li>
           <li class="logos-item">
-            <a href="#">
-                <img src="img/logo-2.png" width="209" height="90" alt="barbershop">
-              </a>
+            <a class="barbershop" href="#">
+              <img class="logo-img" src="img/logo-2.png" width="209" height="90" alt="barbershop">
+            </a>
           </li>
           <li class="logos-item">
-            <a href="#">
-                <img src="img/logo-3.png" width="185" height="52" alt="pink">
-              </a>
+            <a class="pink" href="#">
+              <img class="logo-img" src="img/logo-3.png" width="185" height="52" alt="pink">
+            </a>
           </li>
           <li class="logos-item">
-            <a href="#">
-                <img src="img/logo-4.png" width="173" height="84" alt="mishka">
-              </a>
+            <a class="mishka" href="#">
+              <img class="logo-img" src="img/logo-4.png" width="173" height="84" alt="mishka">
+            </a>
           </li>
         </ul>
       </section>
