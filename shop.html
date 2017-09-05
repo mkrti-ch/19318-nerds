@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -67,43 +68,39 @@
             </div>
             <div class="form-group">
               <h3>Сетка:</h3>
-              <div class="layout-grid">
-                <p>
-                  <input type="radio" name="grid" id="adaptive" value="adaptive" class="input-radio" checked>
-                  <label for="adaptive" class="label-radio">Адаптивная</label>
-                </p>
-                <p>
-                  <input type="radio" name="grid" id="fixed" value="fixed" class="input-radio">
-                  <label for="fixed" class="label-radio">Фиксированная</label>
-                </p>
-                <p>
-                  <input type="radio" name="grid" id="reflow" value="reflow" class="input-radio" disabled>
-                  <label for="reflow" class="label-radio">Резиновая</label>
-                </p>
-              </div>
+              <p>
+                <input type="radio" name="grid" id="adaptive" value="adaptive" class="input-radio" checked>
+                <label for="adaptive" class="label-radio">Адаптивная</label>
+              </p>
+              <p>
+                <input type="radio" name="grid" id="fixed" value="fixed" class="input-radio">
+                <label for="fixed" class="label-radio">Фиксированная</label>
+              </p>
+              <p>
+                <input type="radio" name="grid" id="reflow" value="reflow" class="input-radio" disabled>
+                <label for="reflow" class="label-radio">Резиновая</label>
+              </p>
               <h3>Особенности:</h3>
-              <div class="qualities">
-                <p>
-                  <input type="checkbox" name="slider" id="slider" class="input-checkbox" checked>
-                  <label for="slider" class="label-checkbox">Слайдер</label>
-                </p>
-                <p>
-                  <input type="checkbox" name="advantages" id="advantages" class="input-checkbox">
-                  <label for="advantages" class="label-checkbox">Блок преимуществ</label>
-                </p>
-                <p>
-                  <input type="checkbox" name="news" id="news" class="input-checkbox" checked>
-                  <label for="news" class="label-checkbox">Новости</label>
-                </p>
-                <p>
-                  <input type="checkbox" name="gallery" id="gallery" class="input-checkbox">
-                  <label for="gallery" class="label-checkbox">Галерея</label>
-                </p>
-                <p>
-                  <input type="checkbox" name="trash" id="trash" class="input-checkbox" disabled>
-                  <label for="trash" class="label-checkbox">Корзина</label>
-                </p>
-              </div>
+              <p>
+                <input type="checkbox" name="slider" id="slider" class="input-checkbox" checked>
+                <label for="slider" class="label-checkbox">Слайдер</label>
+              </p>
+              <p>
+                <input type="checkbox" name="advantages" id="advantages" class="input-checkbox">
+                <label for="advantages" class="label-checkbox">Блок преимуществ</label>
+              </p>
+              <p>
+                <input type="checkbox" name="news" id="news" class="input-checkbox" checked>
+                <label for="news" class="label-checkbox">Новости</label>
+              </p>
+              <p>
+                <input type="checkbox" name="gallery" id="gallery" class="input-checkbox">
+                <label for="gallery" class="label-checkbox">Галерея</label>
+              </p>
+              <p>
+                <input type="checkbox" name="trash" id="trash" class="input-checkbox" disabled>
+                <label for="trash" class="label-checkbox">Корзина</label>
+              </p>
             </div>
             <button type="submit" class="btn btn-grey">Показать</button>
           </form>
@@ -129,8 +126,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>SEDONA</h3>
-                <p>Информационный сайт
-                  <br> для туристов</p>
+                <p>Информационный сайт для туристов</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -140,8 +136,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>PINK APP</h3>
-                <p>Продуктовый лендинг
-                  <br> приложения для iOS и Android</p>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -151,8 +146,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>BARBERSHOP</h3>
-                <p>Сайт салоны красоты.
-                  <br> Для мужчин, да.</p>
+                <p>Сайт салоны красоты. Для мужчин, да.</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -162,8 +156,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>MISHKA</h3>
-                <p>Интернет-магазин
-                  <br> вязаных игрушек</p>
+                <p>Интернет-магазин вязаных игрушек</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -173,8 +166,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>A PLUS</h3>
-                <p>Лендинг курсов повышения
-                  <br> квалификации</p>
+                <p>Лендинг курсов повышения квалификации</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -184,8 +176,7 @@
               </figure>
               <div class="catalog-item-info">
                 <h3>КВАСТ</h3>
-                <p>Промо-сайт производителя
-                  <br> крафтового кваса</p>
+                <p>Промо-сайт производителя крафтового кваса</p>
                 <a href="#" class="btn btn-red btn-price">9 900 РУБ.</a>
               </div>
             </article>
@@ -202,12 +193,13 @@
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <iframe src="https://www.google.com/maps/embed/v1/place?q=191186%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB.%20%D0%91.%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8&amp;key=AIzaSyARx8y99QsSq_aXhxFX7599yv4TiglMIAQ" allowfullscreen></iframe>
-      <div class="map-write-us">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p> 191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8</p>
-        <p class="phone">тел. +7 (812) 275-75-75</p>
-        <a href="#modal-write-us" class="btn btn-red btn-write-us">Напишите нам</a>
+      <div class="container">
+        <div class="map-write-us">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">тел. +7 (812) 275-75-75</p>
+          <a href="#modal-write-us" class="btn btn-red btn-write-us">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
@@ -231,22 +223,24 @@
     <h2>Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="user-info">
-        <p class="name">
+        <p>
           <label class="label-text" for="name">Ваше имя:</label>
-          <input id="name" class="input-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          <input id="name" class="input-text" type="text" name="username" placeholder="Представьтесь, пожалуйста" required>
         </p>
-        <p class="email">
+        <p>
           <label class="label-email" for="email">Ваш e-mail:</label>
-          <input id="email" class="input-email" type="email" name="email" placeholder="Для отправки ответа">
+          <input id="email" class="input-email" type="text" name="email" placeholder="Для отправки ответа" required>
         </p>
       </div>
-      <p class="textarea-input">
+      <p class="user-info-textarea">
         <label class="label-text" for="text">Текст письма:</label>
         <textarea id="text" class="input-textarea textarea-wide" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button type="submit" class="btn btn-red btn-send">Отправить</button>
     </form>
   </section>
+  <!-- <script src="js/script.min.js"></script> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
