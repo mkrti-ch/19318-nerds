@@ -286,11 +286,10 @@ html {
   padding-left: 6px;
 
   -ms-flex-wrap: wrap;
-
       flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .site-navigation-item {
@@ -675,7 +674,6 @@ html {
   list-style: none;
 
   -ms-flex-wrap: wrap;
-
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
   -webkit-box-pack: justify;
@@ -693,6 +691,9 @@ html {
 }
 
 .logo-img {
+  width: 260px;
+  height: 180px;
+
   opacity: .2;
 }
 
@@ -971,7 +972,7 @@ footer p {
   margin: 0;
   padding: 10px 15px;
 
-  color: rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, 1);
   border: 2px solid rgba(0, 0, 0, .1);
   border-radius: 5px;
 }
