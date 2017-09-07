@@ -6,6 +6,12 @@ var form = popUp.querySelector("form");
 var username = popUp.querySelector("[name=username]");
 var email = popUp.querySelector("[name=email]");
 
+var allNojs = document.querySelectorAll(".no-js");
+
+for (var i = 0; i < allNojs.length; i++) {
+  allNojs[i].classList.remove("no-js");
+}
+
 buttonWriteUs.addEventListener("click", function(evt) {
   evt.preventDefault();
   popUp.classList.add("modal-show");

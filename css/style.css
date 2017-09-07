@@ -734,15 +734,18 @@ html {
   margin-bottom: 65px;
 }
 
-.map img {
+.map-pic {
   display: none;
 }
 
-.map img.no-js {
-/*   display: block;
-  margin: 0 auto; */
+.no-js .map-pic {
+  display: block;
+}
 
-  text-align: center;
+.no-js iframe {
+  display: none;
+
+  height: 0;
 }
 
 .map iframe {
@@ -750,8 +753,7 @@ html {
   height: 416px;
 
   border: 0;
-
-  }
+}
 
 .map-write-us {
   position: absolute;
