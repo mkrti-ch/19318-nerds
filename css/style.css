@@ -732,6 +732,8 @@ html {
   position: relative;
 
   margin-bottom: 65px;
+
+  text-align: center;
 }
 
 .map-pic {
@@ -739,7 +741,7 @@ html {
 }
 
 .no-js .map-pic {
-  display: block;
+  display: inline;
 }
 
 .no-js iframe {
