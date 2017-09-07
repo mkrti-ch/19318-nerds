@@ -6,11 +6,9 @@ var form = popUp.querySelector("form");
 var username = popUp.querySelector("[name=username]");
 var email = popUp.querySelector("[name=email]");
 
-var allNojs = document.querySelectorAll(".no-js");
+var allNojs = document.querySelector(".no-js");
 
-for (var i = 0; i < allNojs.length; i++) {
-  allNojs[i].classList.remove("no-js");
-}
+allNojs.classList.remove("no-js");
 
 buttonWriteUs.addEventListener("click", function(evt) {
   evt.preventDefault();
