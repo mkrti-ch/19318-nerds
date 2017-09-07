@@ -792,12 +792,6 @@ html {
   margin-bottom: 40px;
 }
 
-.map-marker {
-  position: absolute;
-  bottom: 107px;
-  left: 48.7%;
-}
-
 
 
 
@@ -1061,27 +1055,6 @@ footer p {
           animation-name: bounce;
   -webkit-animation-duration: .6s;
           animation-duration: .6s;
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.modal-rotate {
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 @-webkit-keyframes shake {
@@ -1410,14 +1383,6 @@ footer p {
 
 .form-group input {
   display: none;
-}
-
-.form-group ul {
-  margin: 0;
-  padding: 0;
-  padding-left: 37px;
-
-  list-style: none;
 }
 
 .form-group p {
