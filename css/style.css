@@ -48,6 +48,7 @@ html {
 /* --------------- Кнопки --------------- */
 
 .btn {
+  font-weight: 500;
   line-height: 18px;
 
   display: inline-block;
@@ -78,6 +79,7 @@ html {
 }
 
 .btn-red:active {
+  color: rgba(255, 255, 255, .3);
   background-color: #d7373b;
   -webkit-box-shadow: inset 0 3px 0 0 #c13135;
           box-shadow: inset 0 3px 0 0 #c13135;
@@ -92,6 +94,7 @@ html {
 }
 
 .btn-green:active {
+  color: rgba(255, 255, 255, .3);
   background-color: #00aa62;
   -webkit-box-shadow: inset 0 3px 0 0 #009958;
           box-shadow: inset 0 3px 0 0 #009958;
@@ -106,6 +109,7 @@ html {
 }
 
 .btn-yellow:active {
+  color: rgba(255, 255, 255, .3);
   background-color: #e5a722;
   -webkit-box-shadow: inset 0 3px 0 0 #ce961f;
           box-shadow: inset 0 3px 0 0 #ce961f;
@@ -492,14 +496,21 @@ html {
 
   list-style: none;
 
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .features-item {
   width: 300px;
   margin-right: 100px;
+}
+
+.features-item:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .features-item img {
@@ -634,6 +645,8 @@ html {
 
   margin-top: 58px;
   margin-right: 10px;
+
+  vertical-align: top;
 }
 
 .stats-percent b {
@@ -778,6 +791,8 @@ html {
   margin-top: 49px;
   margin-bottom: 23px;
 
+  text-transform: uppercase;
+
   color: #000;
 }
 
@@ -826,11 +841,10 @@ html {
 .social-btn {
   display: inline-block;
 
-  width: 78px;
-  height: 78px;
+  width: 77px;
+  height: 77px;
   margin-right: 10px;
 
-  text-align: center;
   vertical-align: top;
 
   border-radius: 50%;
@@ -845,18 +859,36 @@ html {
 
 .social-btn:active {
   background-color: #d7373b;
+  -webkit-box-shadow: inset 0 3px 0 0 #c13135;
+          box-shadow: inset 0 3px 0 0 #c13135;
 }
 
-.social-btn-vk {
+.social-btn::before {
+  position: absolute;
+
+  width: 77px;
+  height: 77px;
+
+  content: '';
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-btn-vk::before {
   background-image: url('../img/vk-icon.svg');
 }
 
-.social-btn-fb {
+.social-btn-fb::before {
   background-image: url('../img/fb-icon.svg');
 }
 
-.social-btn-in {
+.social-btn-in::before {
   background-image: url('../img/insta-icon.svg');
+}
+
+.social-btn:active::before {
+  opacity: .3;
 }
 
 .footer-promo {
@@ -1244,6 +1276,23 @@ footer p {
   color: #000;
 }
 
+.item-info-link {
+  text-decoration: none;
+}
+
+.item-info-link:visited {
+  color: #000;
+}
+
+.item-info-link:hover {
+  color: #fb565a;
+}
+
+.item-info-link:active {
+  opacity: .3;
+  color: #000;
+}
+
 .catalog-item-info p {
   line-height: 18px;
 
@@ -1390,14 +1439,14 @@ footer p {
 .form-group p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 16px;
 
   position: relative;
 
   display: block;
 
   margin: 0;
-  margin-top: 22px;
+  margin-top: 21px;
   padding: 0;
   padding-left: 37px;
 }
@@ -1419,7 +1468,7 @@ footer p {
 }
 
 .form-group h3 {
-  margin-top: 47px;
+  margin-top: 49px;
 }
 
 .cost .label-text {
@@ -1544,7 +1593,7 @@ footer p {
 .catalog-left button[type='submit'] {
   line-height: 20px;
 
-  margin-top: 43px;
+  margin-top: 48px;
   padding: 16px 88px;
 
   border: 0;
