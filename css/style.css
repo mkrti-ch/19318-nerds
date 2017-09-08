@@ -509,7 +509,7 @@ html {
   margin-right: 100px;
 }
 
-.features-item:nth-child(3n+3) {
+.features-item:nth-child(3n) {
   margin-right: 0;
 }
 
