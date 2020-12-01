@@ -1,6 +1,5 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Миша Овсепян](https://up.htmlacademy.ru/htmlcss/18/user/19318).
 * Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er).
 
 ---
